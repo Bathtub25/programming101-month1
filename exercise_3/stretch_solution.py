@@ -1,9 +1,5 @@
-# Exercise 3: Count Occurrences
-# Read challenge.md. Write your own algorithm and checks here.
-# Interface: count_value(numbers, target)
-# No solution is provided in this trainee file.
 list_of_numbers = [6, 4, 3, 5, 6, 5, 7, 8, 5, 8, 6]
-wantednum=5
+wantednum=8
 def find_max_from_list_of(numbers, targetnum):
     # function definition
     instances = 0
