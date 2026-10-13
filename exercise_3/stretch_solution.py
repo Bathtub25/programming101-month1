@@ -1,20 +1,20 @@
 list_of_numbers = [6, 4, 3, 5, 6, 5, 7, 8, 5, 8, 6]
-wantednum=8
-def find_max_from_list_of(numbers, targetnum):
-    # function definition
-    instances = 0
-    if targetnum == None or numbers == None:
+greater = "greaterthanzero"
+less = "lessthanzero"
+def findcondition(numbers, condition):
 
-        print("Invalid Input")
-        return
-    for x in numbers:
-        if (x == targetnum):
-            instances = instances + 1
-
-
-    if instances == 1:
-        print("Number occurs", instances, "time")
+    num=0
+    if condition == "greaterthanzero":
+        for x in numbers:
+            if x >= 0:
+                num=num+1
+            
+    elif condition == "lessthanzero":
+        for x in numbers:
+            if x <= 0:
+                num=num+1
     else:
-        print("Number occurs", instances, "times")
-
-find_max_from_list_of(list_of_numbers, wantednum)
+        print("Invalid Condition")
+    print(num)
+findcondition(list_of_numbers, greater)
+findcondition(list_of_numbers, less)
